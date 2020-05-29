@@ -1,4 +1,4 @@
-                                                                                                                                      var ball,img,paddle, gameState;
+var ball,img,paddle, gameState;
 function preload() {
   ballimg = loadImage('ball.png');
   paddleimg=loadImage("paddle.png")
