@@ -22,7 +22,7 @@ function draw() {
     text("Press Space to Serve",150,180);
   }
   if(ball.isTouching(paddle)){
-    //hitSound.play();
+    hitSound.play();
     ball.x = ball.x - 5;
     ball.velocityX = -ball.velocityX;
   }
@@ -44,13 +44,13 @@ function draw() {
   //Bounce Off the Left Edge only
   ball.bounceOff(edges[0]); 
   if(ball.isTouching(edges[0])){
-    //hitSound.play();
+    hitSound.play();
     ball.x = ball.x + 5;
     ball.velocityX = -ball.velocityX;
   }  if (ball.isTouching(edges[2]) || ball.isTouching(edges[3])) {
     ball.bounceOff(edges[2]);
     ball.bounceOff(edges[3]);
-    //wall_hitSound.play();
+    wall_hitSound.play();
   }
   if(keyDown(UP_ARROW))
   {
